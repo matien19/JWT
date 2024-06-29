@@ -1,0 +1,27 @@
+get http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJtYXRpZW4iLCJlbWFpbCI6Im1hdGllbkBnbWFpbC5jb20iLCJub1RlbHAiOiIwODc2NzIzMjMyMzI3IiwiaWF0IjoxNzE3OTYzNDc5LCJleHAiOjE3MTgwNDk4Nzl9.0mCgkidLU59W78lRxsg5Rl94DPuF86uGYAFnPsh0LKA
+###
+POST  http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "dd",
+    "email": "dd@gmail.com",
+    "password": "12345",
+    "no_telp": "098192328138"
+}
+
+###
+post http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "matien@gmail.com",
+    "password": "12345678"
+}
+
+###
+get http://localhost:5000/token
+
+###
+delete http://localhost:5000/logout
